@@ -13,11 +13,6 @@
   --main-padding-bottom: 100px;
   --main-background-color: #ececec;
 }
-html,
-body {
-  width: auto !important;
-  overflow-x: hidden !important;
-}
 body {
   font-family: "cairo", sans-serif;
 }
@@ -154,7 +149,7 @@ a {
 }
 @media (max-width: 767px) {
   .btn-back_to_top a {
-    right: 15px;
+    right: 90px;
   }
 }
 /* End Up-Button */
@@ -189,8 +184,8 @@ a {
   box-shadow: #607d8b 0px 0px 10px 0px;
   position: relative;
   /* position: sticky;
-    top: 0; */
-  /* z-index: 1000; */
+    top: 0;
+    z-index: 1000; */
 }
 /* @media (max-width : 767px) {
     .header{
@@ -224,15 +219,16 @@ a {
 .header .main-nav {
   display: flex;
 }
-.header .main-nav .menu-icon {
+.header .main-nav .menu-icon{
   margin-left: 250px;
 }
 @media (max-width: 767px) {
   .header .main-nav {
     margin: auto;
   }
-  .header .main-nav .menu-icon {
-    margin-left: 20px;
+  .header .main-nav .menu-icon{
+
+    margin-left: 80px;
   }
 }
 .header .main-nav > li:hover .mega-menu {
@@ -416,10 +412,6 @@ a {
   border-radius: 40px;
   font-weight: bold;
 }
-.ityped-cursor {
-  -webkit-animation: blink 1s infinite;
-  animation: blink 1s infinite;
-}
 /* End Home */
 /* Start Landing */
 .landing {
@@ -490,24 +482,11 @@ a {
 @media (max-width: 767px) {
   .landing .text h1 {
     font-size: 28px;
-    text-align: center;
-    align-items: center;
-  }
-  .landing .text h5 {
-    text-align: center;
-  }
-  .landing .text p {
-    text-align: center;
-    align-items: center;
-  }
-  .theme-list li {
-    align-items: center;
-    text-align: center;
   }
 }
 .landing .text p {
   font-size: 22px;
-  line-height: 1.8;
+  line-height: 1.5;
   margin: -15px 0 0;
   color: #666;
   max-width: 500px;
@@ -558,12 +537,6 @@ a {
   .landing .text p {
     font-size: 20px;
   }
-  .theme-list::before {
-    left: 73px;
-  }
-  .theme-list li::before {
-    left: 35px;
-  }
 }
 @media (max-width: 992px) {
   .landing .container {
@@ -584,27 +557,6 @@ a {
 }
 .landing .go-down i {
   animation: bouncing 1.5s infinite;
-}
-.landing .container .download_cv {
-  display: flex;
-  padding: 5px 50px;
-  color: var(--main-color);
-  border: 2px solid var(--main-color);
-  font-size: 20px;
-  border-radius: 40px;
-  font-weight: bold;
-  justify-content: center;
-  margin-top: 25px;
-}
-.landing .container .download_cv:hover {
-  background-color: var(--main-color);
-  transition: var(--main-transition);
-  color: #666;
-}
-@media (max-width: 767px) {
-  .landing .container .download_cv {
-    font-size: 20px;
-  }
 }
 /* End Landing */
 /* Start Skills */
@@ -751,9 +703,7 @@ a {
   font-size: 100%;
   color: var(--main-color);
 }
-.list li p {
-  line-height: 1.5;
-}
+
 /* End Education */
 /* Start Article */
 .article {
@@ -1292,17 +1242,6 @@ a {
   }
   50% {
     background-image: url(../Imgs/discount-background2.jpg);
-  }
-}
-@keyframes blink {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
   }
 }
 /* End Animation  */
